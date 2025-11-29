@@ -1,0 +1,21 @@
+class Theater:
+    def __init__(self, name):
+      self.name = name
+
+      
+movie1 = Theater("Kis kisko Pyaar Karu")
+movie1.releaseTime = "1:20"
+movie1.ticketPrice = "$4.92"
+
+movie2 = Theater("Avengers Endgame")
+movie2.releaseTime = "4:00"
+movie2.ticketPrice = "$5.76"
+
+print("Movie Name :" + movie1.name)
+print("Movie Release Time :" + movie1.releaseTime)
+print("Movie Ticket Price :" + movie1.ticketPrice)
+print("********************************************************************************")
+
+print("Movie Name :" + movie2.name)
+print("Movie Release Time :" + movie2.releaseTime)
+print("Movie Ticket Price :" + movie2.ticketPrice)
