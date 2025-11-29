@@ -1,0 +1,17 @@
+class MissTinaLife:
+    def one_method(self):
+        married = self.method_pew()
+        age = self.method_two()
+        print("The age of Miss Tina when were in here school days was :", age)
+        print("Miss Tina got married at the age of :", married)
+
+    def method_two(self):
+        return 15
+
+    def method_pew(self):
+        return 23
+
+obj = MissTinaLife()
+
+obj.one_method()
+
