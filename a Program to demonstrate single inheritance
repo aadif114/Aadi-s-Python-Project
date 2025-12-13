@@ -1,0 +1,13 @@
+class Games:
+    def Graphics(self):
+        return "The game graphics is mid and good"
+
+class FreeFire(Games):
+    def vISUALsTYLE(self):
+        return "The FreeFire visual style is bad and worst"
+
+ff = FreeFire()
+
+print(ff.Graphics())
+
+print(ff.vISUALsTYLE())
