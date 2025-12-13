@@ -1,0 +1,18 @@
+class IndianARMY:
+    def force(self):
+        return "Saves our motherland INDIA"
+
+class IndianNavy(IndianARMY):
+    def force(self):
+        return "Saves our motherland in Oceans"
+
+class IndianAirForce(IndianARMY):
+    def force(self):
+        return "Saves our motherland in Air"
+
+
+n = IndianNavy()
+a = IndianAirForce()
+
+print(n.force())
+print(a.force())
