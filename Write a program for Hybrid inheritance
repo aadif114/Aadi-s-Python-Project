@@ -1,0 +1,22 @@
+class MvluCollege:
+    def access(self):
+        print("Everyone could access Canteen")
+
+class BioTech(MvluCollege):
+    role = "Biotech Students "
+    def get(self):
+        print(self.role + "Could get access of Chemistry Lab")
+
+class CS(MvluCollege):
+    role = "CS Students "
+    def can(self):
+        print(self.role + "Could get access of Computer Lab")
+
+class Students(BioTech, CS):
+    role = "Students "
+    pass
+
+students = Students()
+students.access()
+students.get()
+students.can()
