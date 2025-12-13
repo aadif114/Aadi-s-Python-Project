@@ -1,0 +1,19 @@
+class MaleCat:
+    def male_color(self):
+        return "Male cat is brown"
+
+class FemaleCat:
+    def fmale_color(self):
+        return "Female cat is white"
+    
+class Kitten(MaleCat, FemaleCat):
+    def kitten_color(self):
+        return "Kitten color is Munchkin"
+
+c = Kitten()
+
+print(c.male_color())
+print(c.fmale_color())
+
+print(c.kitten_color())
+
