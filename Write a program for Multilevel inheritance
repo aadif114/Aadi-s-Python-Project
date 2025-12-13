@@ -1,0 +1,17 @@
+class BMW_E21_1975:
+    def fstgen_fea(self):
+        return "BMW E21: Driven-Focused Cockpit was the feature"
+
+class BMW_E36_1990(BMW_E21_1975):
+    def trdgen_fea(self):
+        return "BMW E36: Enhanced Refinement and Safety was the feature"
+
+class BMW_E90_2005(BMW_E36_1990):
+    def fthgen_fea(self):
+        return "BMW E90: Introduction of iDrive is the feature"
+
+f = BMW_E90_2005()
+
+print(f.fstgen_fea())
+print(f.trdgen_fea())
+print(f.fthgen_fea())
