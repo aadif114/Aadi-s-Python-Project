@@ -1,0 +1,20 @@
+class Battery:
+    def __init__(self, capacity):
+        self.capacity = capacity  
+    
+    def status(self):
+        return f"Battery is at {self.capacity}%"
+
+class Car:
+    def __init__(self, model):
+        self.model = model
+
+    def info(self, battery_no1):
+        status = battery_no1.status()
+        print(f"Model: {self.model} | {status}")
+
+battery_no1 = Battery(85)
+
+car_mode1 = Car("Tata Nexon level-2")
+
+car_mode1.info(battery_no1)
