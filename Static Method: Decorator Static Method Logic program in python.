@@ -1,0 +1,15 @@
+class MathsAdd:
+
+    @staticmethod
+    def add(a, b):
+        return a + b
+class MathsSub:
+    @staticmethod
+    def sub(c, d):
+        return c - d
+
+
+result = MathsAdd.add(10, 20)
+result1 = MathsSub.sub(11, 9)
+print(result)
+print(result1)
