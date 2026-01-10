@@ -1,0 +1,15 @@
+class Calculator:
+    def add(self, *args):
+        return sum(args)
+
+    def sub(self, a, b, c=0):
+        return a - b - c
+
+# Usage
+obj = Calculator()
+
+print("Addition of 2 no. is:", obj.add(5, 10))    
+print("Subtraction of 2 no. is:", obj.sub(7, 4))
+
+print("Addition of 3 no. is:", obj.add(5, 5, 5))
+print("Subtraction of 3 no. is:", obj.sub(10, 3, 4))
