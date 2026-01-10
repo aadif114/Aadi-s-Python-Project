@@ -1,0 +1,18 @@
+class Phone:
+    def power_on(self):
+        print("Phone screen lights up...")
+
+class Laptop:
+    def power_on(self):
+        print("Laptop fans start spinning...")
+
+def press_button(device):
+   
+    device.power_on()
+
+# Usage
+my_phone = Phone()
+my_laptop = Laptop()
+
+press_button(my_phone)
+press_button(my_laptop)
