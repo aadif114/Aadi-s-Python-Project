@@ -1,0 +1,12 @@
+class Animal:
+    def call(self):
+        print("Animal could be called by us")
+
+class Dog(Animal):
+    def call(self):
+        print("Call them through whistling! they will wave their tail")
+
+# Usage
+my_dog = Dog()
+my_dog.call() 
+ 
