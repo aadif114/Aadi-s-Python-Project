@@ -1,0 +1,20 @@
+class Student:
+    def __init__(self, name, pen, ink):
+        self.name = name
+        self.wm = self.WritingMaterial(pen, ink)
+
+    def show(self):
+        print(f"Student: {self.name}")
+        self.wm.display()
+
+    class WritingMaterial:
+        def __init__(self, pen, ink):
+            self.pen = pen
+            self.ink = ink
+
+        def display(self):
+            print(f"Writin Material is using : {self.pen}, and their ink quality is {self.ink}")
+
+# Usage
+s1 = Student("Brian", "Montex by Flair", "gel")
+s1.show()
