@@ -1,0 +1,15 @@
+class Engine:
+    def __init__(self, horsepower):
+        self.hp = horsepower 
+class Car:
+    def __init__(self, model, horsepower):
+        self.model = model
+        self.engine = Engine(horsepower) 
+
+    def show(self):
+        print(f"Car: {self.model} | Horsepower: {self.engine.hp}")
+
+# Usage
+my_car = Car("Nissan's GTR", 500)
+my_car.show()
+
