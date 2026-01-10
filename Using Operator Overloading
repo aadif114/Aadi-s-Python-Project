@@ -1,0 +1,20 @@
+class Purse:
+    def __init__(self, cash=0, coins=0):
+        self.cash = cash
+        self.coins = coins
+
+    def __add__(self, other):
+        new_cash = self.cash + other.cash
+        new_coins = self.coins + other.coins
+        return Purse(new_cash, new_coins)
+
+    def __str__(self):
+        return f"Purse with ${self.cash} and ¢{self.coins}"
+
+
+w1 = Purse(100, 50)  
+w2 = Purse(30, 10)   
+
+w3 = w1 + w2
+
+print(w3) 
