@@ -1,0 +1,17 @@
+class Dog:
+    def call(self):
+        return "Whistle whislte :3!"
+
+class Cat:
+    def call(self):
+        return "Psss Psss!!"
+
+def calling_them(animal):
+    print(animal.call())
+
+# Usage
+my_dog = Dog()
+my_cat = Cat()
+
+calling_them(my_dog)  
+calling_them(my_cat) 
