@@ -1,0 +1,33 @@
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+
+    @abstractmethod
+    def sides(self):
+        pass
+
+
+class Circle(Shape):
+
+    def sides(self):
+        print("There are no sides in circle.")
+
+
+class Square(Shape):
+
+    def sides(self):
+        print("There are four sides in square.")
+
+class Triangle(Shape):
+
+    def sides(self):
+        print("There are three sides in triangle.")
+# Creating objects
+cir = Circle()
+cir.sides()
+
+squ = Square()
+squ.sides()
+
+tri = Triangle()
+tri.sides()
