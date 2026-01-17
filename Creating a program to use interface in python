@@ -1,0 +1,32 @@
+class TravelingMethod(ABC):
+
+    @abstractmethod
+    def TimeTake(self, time):
+        pass
+
+
+# Implementing the interface
+class Bus(TravelingMethod):
+
+    def TimeTake(self, time):
+        print(f"It will take {time} hours to reach Delhi with Bus.")
+
+
+class Train(TravelingMethod):
+
+    def TimeTake(self, time):
+        print(f"It will take {time} hours to reach Delhi with Train")
+
+class Airplane(TravelingMethod):
+
+    def TimeTake(self, time):
+        print(f"It will take {time} hours to reach Delhi with Airplane")
+# Using the interface
+travel1 = Bus()
+travel1.TimeTake(35)
+
+travel2 = Train()
+travel2.TimeTake(21)
+
+travel3 = Airplane()
+travel3.TimeTake(3)
