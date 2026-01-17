@@ -1,0 +1,22 @@
+from abc import ABC, abstractmethod
+
+
+class IndianEmp(ABC):
+
+    @abstractmethod
+    def interested(self):
+        pass
+
+class ITsector(IndianEmp):
+
+    def __init__(self, employed, job_applicant):
+        self.employed = employed
+        self.job_applicant = job_applicant
+
+    def interested(self):
+        return self.employed + self.job_applicant
+
+itsect = ITsector( 50_40_000 , 60_000)
+print("In IT sector, ", itsect.interested() , "  people are interested in it")
+
+
