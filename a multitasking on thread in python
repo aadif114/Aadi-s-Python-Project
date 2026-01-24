@@ -1,0 +1,23 @@
+import threading
+import time
+
+def task1():
+    l = 50
+    b = 41
+    print(2 * l + 2 * b)
+
+def task2():
+    l = 41
+    b = 11
+    print(l * b)
+
+t1 = threading.Thread(target=task1)
+t2 = threading.Thread(target=task2)
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
+print("Both tasks completed")
