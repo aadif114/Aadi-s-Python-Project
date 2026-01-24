@@ -1,0 +1,25 @@
+import threading
+import time
+
+lock = threading.Lock()
+counter = 0
+
+def increment():
+    global counter
+    for _ in range(3):
+        with lock:            
+            penalty = counter
+            time.sleep(3)    
+            counter = penalty + 1
+            print("Penalty by a being late is", counter)
+
+t1 = threading.Thread(target=increment)
+t2 = threading.Thread(target=increment)
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
+print("The final penalty count is ", counter, "And that is hilarious")
