@@ -1,0 +1,3 @@
+pet = int(input("Enter a No."))
+if pet == 10
+          print("you're prick")
