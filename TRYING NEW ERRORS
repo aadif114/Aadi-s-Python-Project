@@ -1,0 +1,66 @@
+x = 100 / 0
+print(x)
+
+try:
+    num = int(input("Enter a number: "))
+    result = 100 / num
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Error: Are you gawar man!")
+
+try:
+    value = input("Enter a number: ")
+    x = 10/ value
+    print(x)
+except TypeError:
+    print("Error: please enter a word not number!!!")
+except ValueError:
+    print("Error: please improve it!!")
+
+
+try:
+    file = open("hai_hinahi.txt", "r")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+try:
+    num = int(input("Enter a number: "))
+    result = 100 / num
+except ValueError:
+    print("Hey can u actually add a number pleaseee!!!!!!")
+else:
+    print("Result:", result)
+finally:
+
+    print("Execution completed.")
+
+
+class InvalidNumberError(Exception):
+    """Custom exception for invalid numbers"""
+    pass
+
+
+def check_division(num):
+    if num == 0:
+        raise InvalidNumberError("Please do not enter 0!!")
+    return num
+
+
+try:
+    number = int(input("Enter a positive number: "))
+    check_division(number)
+    print("Valid number entered!")
+except InvalidNumberError as e:
+    print(f"Error: {e}")
+
+import logging
+# Configure logging
+logging.basicConfig(filename="error.log", level=logging.ERROR,
+    format="%(asctime)s - %(levelname)s - %(message)s")
+
+try:
+    x = 10 / 0
+except ZeroDivisionError as e:
+
+    logging.error("ZeroDivisionError occurred: %s", e)
+    print("An error occurred. Check error.log for details.")
